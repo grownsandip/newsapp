@@ -3,7 +3,7 @@ import './App.css';
 import React, { Component } from 'react'
  
  export default class App extends Component {
-  name='Sandip';
+  name ='Sandip';
    render() {
      return (
        <div>
