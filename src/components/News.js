@@ -6,16 +6,40 @@ export class News extends Component {
     super();
     this.state={
        articles:[],
-       loading: false
+       loading: false,
+       page:1
     }
   }
   async componentDidMount(){
-    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=e8de7740bb30498e93e9cfda716fd8a0";
+    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=e8de7740bb30498e93e9cfda716fd8a0&pagesize=20";
     let data=await fetch(url);
     let parsedData=await data.json();
     console.log(parsedData);
-    this.setState({articles:parsedData.articles})
+    this.setState({articles:parsedData.articles,totalResults:parsedData.totalResults})
   }
+  handleNext= async ()=>{
+    if (this.state.page+1>Math.ceil(this.state.totalResults/20)){
+
+    }
+    else{
+   let url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=e8de7740bb30498e93e9cfda716fd8a0&page=${this.state.page+1}&pagesize=20`;
+   let data=await fetch(url);
+   let parsedData=await data.json();
+   this.setState({
+    page:this.state.page+1,
+    articles:parsedData.articles
+   })
+  }
+ }
+  handlePrev= async ()=>{
+  let url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=e8de7740bb30498e93e9cfda716fd8a0&page=${this.state.page-1}`;
+  let data=await fetch(url);
+  let parsedData=await data.json();
+  this.setState({
+   page:this.state.page-1,
+   articles:parsedData.articles
+  })
+ }
   render() {
     return (
       <div className='container my-3 '>
@@ -27,6 +51,10 @@ export class News extends Component {
               </div>
         })}
         </div>
+        <div className="container d-flex justify-content-between">
+            <button disabled={this.state.page<=1} type="button" class="btn btn-dark" onClick={this.handlePrev}>&larr;Previous </button>
+            <button type="button" class="btn btn-dark" onClick={this.handleNext}>Next &rarr;</button>
+         </div>
       </div>
     )
   }
