@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import { Spinner } from "./Spinner";
 import PropTypes from "prop-types";
-<<<<<<< HEAD
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export class News extends Component {
@@ -16,7 +15,7 @@ export class News extends Component {
     pageSize: PropTypes.number,
     category: PropTypes.string,
   };
-<<<<<<< HEAD
+
   capitalizeFirstletter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
@@ -56,7 +55,6 @@ export class News extends Component {
     this.setState({ page: this.state.page - 1 });
     this.updateNews();
   };
-<<<<<<< HEAD
   fetchMoreData= async ()=>{
      this.setState({page:this.state.page+1});
      const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e8de7740bb30498e93e9cfda716fd8a0&page=${this.state.page}&pageSize=${this.props.pageSize}`;
