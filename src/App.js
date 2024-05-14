@@ -34,7 +34,7 @@ import {
         <Route exact path="/" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="general" pageSize={this.pageSize} counrty="us" category="general"/>}/>
         <Route exact path="/business" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="business"pageSize={this.pageSize} counrty="in" category="business"/>}/>
         <Route exact path="/science" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="science"pageSize={this.pageSize} counrty="in" category="science"/>}/>
-        <Route exact path="/sports/" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="sports"pageSize={this.pageSize} counrty="in" category="sports"/>}/>
+        <Route exact path="/sports" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="sports"pageSize={this.pageSize} counrty="in" category="sports"/>}/>
         <Route exact path="/health" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="health" pageSize={this.pageSize} counrty="in" category="health"/>}/>
         <Route exact path="/technology"element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="technology"pageSize={this.pageSize} counrty="in" category="technology"/>}/>
         <Route exact path="/entertainment" element={<News setProgress={this.setProgress} apiKey={this.apiKey}  key="entertainment" pageSize={this.pageSize} counrty="in" category="entertainment"/>}/>
