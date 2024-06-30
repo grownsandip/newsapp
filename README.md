@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# OUTPUT SCREENSHOTS:
+### Business news:
+![Business_headlines](https://github.com/grownsandip/newsapp/assets/139869416/125a5bca-f425-4fc4-94ae-7f8e87dabff0)
+### Entertainment news:
+![Entertainment_headlines](https://github.com/grownsandip/newsapp/assets/139869416/49f2da90-9db3-42dd-88f0-a852ec7a7f8b)
+### General news:
+![General_headlines](https://github.com/grownsandip/newsapp/assets/139869416/4f010ce8-4936-46bc-a03e-d5fa07e8c801)
+### Health news:
+![Health_headlines](https://github.com/grownsandip/newsapp/assets/139869416/dfd299b8-6333-4dec-a4b6-836d0a8a0333)
+### Science news:
+![Science_headlines](https://github.com/grownsandip/newsapp/assets/139869416/a87c610a-c055-484c-8f72-461cede063b5)
+### Sports news:
+![Sports_headlines](https://github.com/grownsandip/newsapp/assets/139869416/1af40761-f548-4344-9dbc-9ce0e4fa2649)
+### Technology news:
+![Tech_headlines](https://github.com/grownsandip/newsapp/assets/139869416/54794aaf-637f-4fb7-a5f7-fbd96f7947e2)
